@@ -16,5 +16,5 @@
 .prettierignore
 
 *.zip
-design/
-js/
+design
+js

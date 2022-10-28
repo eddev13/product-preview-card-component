@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/eddev13-desktop-design.png)
-![](./design/eddev13-mobile-design.png)
+![](./assets/images/eddev13-desktop-design.png)
+![](./assets/images/eddev13-mobile-design.png)
 
 ### Links
 
@@ -41,7 +41,7 @@ Development with SASS pre-processor and SMACSS architecture.
 
 &nbsp;
 
-![](./design/smacss-folders-printscreen.png)
+![](./assets/images/smacss-folders-printscreen.png)
 
 &nbsp;
 
