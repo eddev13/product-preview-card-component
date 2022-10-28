@@ -1,0 +1,14 @@
+@import "./base/elements.scss";
+@import "./abstract/variables";
+@import "./layout/container";
+@import "./components/card";
+
+body {
+  background-color: $cream;
+  font-family: "Montserrat";
+
+  .attribution {
+    margin:16px;
+    text-align: center;
+  }
+}

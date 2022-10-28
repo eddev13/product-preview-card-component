@@ -1,0 +1,117 @@
+.c-card {
+  display: flex;
+  width: 100%;
+
+  .c-card__category,
+  .c-card__description {
+    color: $gray;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .c-card__heading,
+  .low__price {
+    font-family: Fraunces;
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  .c-card__image {
+    background-image: url("../../images/image-product-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+    height: 450px;
+    width: 300px;
+
+    @media (max-width: 600px) {
+      background-image: url("../../images/image-product-mobile.jpg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 20px 20px 0 0;
+      height: 240px;
+      width: 100%;
+    }
+  }
+
+  .c-card__info {
+    background-color: $light;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding: 28px;
+
+    .c-card__category {
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+
+    .c-card__description {
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    .c-card__price {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      .low__price {
+        color: $dark-cyan;
+      }
+
+      .full__price {
+        color: $gray;
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        padding-left: 24px;
+        text-decoration: line-through;
+        width: 100%;
+      }
+    }
+
+    .c-card__button {
+      background-color: $dark-cyan;
+      border-radius: 8px;
+      color: $light;
+      cursor: pointer;
+      display: flex;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      height: 48px;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+
+      .btn__label {
+        line-height: 48px;
+      }
+
+      &:hover {
+        background-color: $secundary-color;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("../../images/icon-cart.svg");
+        background-position: 8px;
+        background-repeat: no-repeat;
+        display: block;
+        width: 32px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      border-radius: 0 0 20px 20px;
+      min-height: 375px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
