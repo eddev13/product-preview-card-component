@@ -15,4 +15,6 @@
 .DS_Store
 .prettierignore
 
-README2.md
+*.zip
+design/
+js/
