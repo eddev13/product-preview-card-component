@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -18,33 +18,38 @@
 </head>
 
 <body>
-  <section class="l-container">
+  <main class="l-container">
     <div class="c-card">
-      <div class="c-card__image"></div>
+      <picture class="c-card__image">
+        <img src="./assets/images/image-product-desktop.jpg" alt="your_alt_text">
+        <source media="(max-width: 600px)" srcset="./assets/images/image-product-mobile.jpg">
+      </picture>
       <div class="c-card__info">
         <a href="./" class="c-card__category">perfume</a>
-        <h2 class="c-card__heading">
+        <h1 class="c-card__heading">
           Gabrielle Essence Eau De Parfum
-        </h2>
+        </h1>
         <p class="c-card__description">
           A floral, solar and voluptuous interpretation composed by Olivier Polge,
           Perfumer-Creator for the House of CHANEL.
         </p>
         <div class="c-card__price">
           <span class="low__price">$149.99</span>
-          <span class="full__price">$169.99</span>
+          <del class="full__price">$169.99</del>
         </div>
-        <div class="c-card__button">
-          <span class="btn__label">Add to Cart</span>
-        </div>
+        <button class="c-card__button">
+          <span class="btn__label">
+            <img src="./assets/images/icon-cart.svg" alt="">
+            Add to Cart</span>
+        </button>
       </div>
     </div>
-  </section>
-  <div class="attribution">
+  </main>
+  <footer class="attribution">
     Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
-      Mentor</a>.
+      Mentor</a>.<br>
     Coded by <a href="#">Eduardo M. | @eddev13</a>.
-  </div>
+  </footer>
 </body>
 
 </html>
